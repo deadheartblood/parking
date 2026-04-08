@@ -169,7 +169,7 @@ function App() {
               onClose={handleClose}
             />
             <div className="flex min-h-0 min-w-0 flex-1 overflow-hidden">
-              <ParkingSidebar />
+              <ParkingSidebar brandName={uiConfig.serverName} />
               <main className="ui-main-canvas relative min-h-0 min-w-0 flex-1 overflow-y-auto overflow-x-hidden p-6 md:p-8">
                 <div className="page-enter relative z-10 mx-auto max-w-[1200px]">
                   <ParkingPageChrome lotLabel={lotLabel} vehicleCount={vehicles.length} loading={listLoading} />

@@ -139,7 +139,7 @@ function ParkingToolbar({
           type="search"
           value={search}
           onChange={(e) => onSearchChange(e.target.value)}
-          placeholder="Search plate, vehicle, or facility…"
+          placeholder="search plate or vehicle..."
           className="w-full rounded-xl border border-white/10 bg-black/20 py-2.5 pl-10 pr-10 font-sans text-sm text-zinc-100 shadow-inner outline-none ring-0 placeholder:text-zinc-600 focus:border-white/20 focus:bg-black/30"
           autoComplete="off"
           spellCheck={false}

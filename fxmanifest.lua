@@ -3,8 +3,8 @@ game 'gta5'
 lua54 'yes'
 
 name 'parking'
-description 'Persistent vehicle parking (ESX + oxmysql)'
-author 'Build challenge'
+description 'vehicle parking system for esx'
+author 'deadheartblood'
 
 shared_scripts {
     '@ox_lib/init.lua',

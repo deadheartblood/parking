@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { Building2, Car, Filter } from 'lucide-react'
+import { Car, Filter } from 'lucide-react'
 import type { ParkedVehicleRow } from '../types'
 import { normalizeSearch } from '../utils/format'
 import FleetSkeleton from './FleetSkeleton'
@@ -99,7 +99,7 @@ function ParkingFleet({ vehicles, loading, onRetrieve, retrievingId }: ParkingFl
           </div>
           <p className="font-display text-2xl font-semibold tracking-tight text-zinc-50">No vehicles on file</p>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-zinc-500">
-            Enter a <span className="text-zinc-400">marked municipal bay</span> in a vehicle registered to you, then press{' '}
+            Enter a <span className="text-zinc-400">marked parking spot</span> in a vehicle registered to you, then press{' '}
             <kbd className="rounded border border-white/15 bg-white/10 px-1.5 py-0.5 font-mono text-xs text-zinc-300">E</kbd>{' '}
             to check it in with the city.
           </p>
@@ -117,10 +117,9 @@ function ParkingFleet({ vehicles, loading, onRetrieve, retrievingId }: ParkingFl
               Use this desk to collect your vehicle
             </li>
           </ol>
-          <div className="mt-10 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-xs text-zinc-500">
-            <Building2 className="h-3.5 w-3.5 text-zinc-400" strokeWidth={2} aria-hidden />
-            <span className="font-mono tracking-wide">Licensed facility · Overnight storage subject to posted rules</span>
-          </div>
+          <p className="mt-10 max-w-md text-xs text-zinc-500">
+            Drive into a marked spot and press <kbd className="rounded border border-white/15 bg-white/10 px-1.5 py-0.5 font-mono text-zinc-300">E</kbd> to park.
+          </p>
         </div>
       </div>
     )
@@ -135,7 +134,7 @@ function ParkingFleet({ vehicles, loading, onRetrieve, retrievingId }: ParkingFl
           </span>
           <div>
             <p className="font-display text-xs font-semibold text-zinc-200">Your vehicles</p>
-            <p className="text-[11px] text-zinc-600">Collect at the posted exit lane when you are ready to leave</p>
+            <p className="text-[11px] text-zinc-600">Pull up to the exit when you&apos;re ready.</p>
           </div>
         </div>
         {showNoMatches ? (

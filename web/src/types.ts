@@ -7,7 +7,7 @@ export interface ParkingNuiUiConfig {
 
 export const DEFAULT_PARKING_UI: ParkingNuiUiConfig = {
   serverName: 'City Parking',
-  tagline: 'Municipal overnight storage · Pay posted rates on exit',
+  tagline: 'Park your car here',
   modeLabel: 'Public',
   retrieveFee: 0,
 }

@@ -1,6 +1,10 @@
 import { Car, Keyboard } from 'lucide-react'
 
-function ParkingSidebar() {
+interface ParkingSidebarProps {
+  brandName: string
+}
+
+function ParkingSidebar({ brandName }: ParkingSidebarProps) {
   return (
     <aside className="flex w-[248px] shrink-0 flex-col border-r border-white/[0.08] bg-gradient-to-b from-black/30 to-black/10 py-5">
       <p className="mb-2 px-5 font-display text-[10px] font-semibold uppercase tracking-[0.22em] text-zinc-600">
@@ -39,7 +43,7 @@ function ParkingSidebar() {
             </li>
           </ul>
         </div>
-        <p className="text-center font-mono text-[10px] leading-relaxed text-zinc-600">City parking services</p>
+        <p className="text-center font-mono text-[10px] leading-relaxed text-zinc-600">{brandName}</p>
       </div>
     </aside>
   )
